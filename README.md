@@ -1,4 +1,21 @@
-Criação do DockerFile# Enova - Ambiente Multi-Stack com Docker Compose
+# Enova - Ambiente Multi-Stack com Docker Compose
+## Clonando os Repositórios
+Clone cada projeto individualmente usando os comandos abaixo:
+
+**Python**
+```sh
+git clone https://github.com/Victor-Estrella/Enova-Python
+```
+
+**Java**
+```sh
+git clone https://github.com/Victor-Estrella/Enova-Java
+```
+
+**Next.js**
+```sh
+git clone https://github.com/Victor-Estrella/Enova
+```
 
 ## Descrição
 Este projeto integra aplicações Next.js, Java e Python, todas conectadas a um banco MySQL, utilizando Docker Compose para orquestração.
