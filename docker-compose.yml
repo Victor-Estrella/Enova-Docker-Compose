@@ -1,6 +1,8 @@
-
 services:
   mysql-enova:
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: mysql-enova
     image: mysql:8.0
     ports:
