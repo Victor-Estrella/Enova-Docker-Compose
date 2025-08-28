@@ -47,6 +47,8 @@ services:
         condition: service_healthy
     restart: unless-stopped
     user: "1000:1000"
+    volumes:
+      - ../Enova/.env:/app/.env
 
   enova-java:
     container_name: enova-java
