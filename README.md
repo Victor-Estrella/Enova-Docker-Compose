@@ -52,11 +52,11 @@ docker-compose down
 ---
 
 ## 2. Comandos Essenciais do Docker Compose
-- `docker-compose up` - Inicia os serviços
-- `docker-compose up --build` - Reconstrói as imagens e inicia
-- `docker-compose down` - Para e remove os containers
-- `docker-compose ps` - Lista os containers em execução
-- `docker-compose logs` - Mostra os logs dos serviços
+- `docker compose up` - Inicia os serviços
+- `docker compose up -d --build` - Reconstrói as imagens e inicia
+- `docker compose down -v` - Para e remove os containers
+- `docker compose ps` - Lista os containers em execução
+- `docker compose logs` - Mostra os logs dos serviços
 
 ---
 
@@ -98,7 +98,7 @@ Os serviços de aplicação utilizam o usuário `1000:1000` para execução, evi
 ## 4. Processo de Deploy Passo a Passo
 1. Clone os repositórios
 2. Configure o `.env`
-3. Execute `docker-compose up --build`
+3. Execute `docker compose up -d --build`
 4. Acesse as aplicações pelas portas:
    - Next.js: http://localhost:3000
    - Java: http://localhost:8080
@@ -111,12 +111,12 @@ Os serviços de aplicação utilizam o usuário `1000:1000` para execução, evi
 - **Porta já em uso:** Altere a porta no `docker-compose.yml` ou pare o serviço que está usando a porta.
 - **Permissão negada:** Certifique-se que os arquivos e pastas têm permissão de leitura para o usuário do container.
 - **Build falhou:** Confira se os Dockerfiles estão corretos e se todos os arquivos necessários estão presentes.
-- **Serviço não inicia:** Verifique os logs com `docker-compose logs <serviço>`.
+- **Serviço não inicia:** Verifique os logs com `docker compose logs <serviço>`.
 
 ---
 
 ## 6. Referências e Dúvidas
-- Consulte os logs com `docker-compose logs <serviço>` para mais detalhes.
+- Consulte os logs com `docker compose logs <serviço>` para mais detalhes.
 - Documentação oficial: https://docs.docker.com/compose/
 
 ---
@@ -136,3 +136,4 @@ Os serviços de aplicação utilizam o usuário `1000:1000` para execução, evi
 ---
 
 Projeto preparado para avaliação dos requisitos de Docker Compose e documentação técnica.
+
